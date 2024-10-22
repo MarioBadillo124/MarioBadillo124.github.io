@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/estilos_barra_menu.css" >
+    <link rel="stylesheet" href="estilos/estilos_formulario.css" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="superior">
+            <div class="logo">
+                <img src="images/iconos/logo.jpg" alt="logo">
+            </div>
+            <div class="search">
+                <br><h1>Mike’s Painting And Remodeling</h1><br>
+            </div>
+        </div>
+
+        <div class="container__menu">
+            <nav>
+                <ul>
+                    <li><a href="index.html"></a>
+                    </li>
+                    <li><a href="mi_trabajo/mi_trabajo.html" >Mi trabajo</a></li>
+                    <li><a href="" id="selected">Contactanos</a>
+                        <ul>
+                            <li><a href="">Nosotros</a></li>
+                            <li><a href="#calificar">Nos califica</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header><br>
+
+    <div class="com">
+        <form id="contacto" action="https://formsubmit.co/badillomario48@gmail.com" method="POST">
+            <h2>Ponerse en contacto</h2><br>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Introduzca su nombre" required>
+    
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" name="correo" placeholder="Introduce tu correo electrónico" required>
+    
+            <label for="sujeto">Sujeto</label>
+            <input type="text" id="sujeto" name="sujeto" placeholder="Escribe el asunto" required>
+    
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+    
+            <button type="submit">Enviar</button>
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/contactanos.html">
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+    
+    </div>
+
+    
+    <form class="additional-form" id="calificar" action="https://formsubmit.co/badillomario48@gmail.com" method="POST">
+        <h2>Nos califica</h2><br>
+        <div class="form-row">
+            <div>
+                <label for="nombre_pila">Nombre de pila</label>
+                <input type="text" id="nombre_pila" name="nombre_pila" placeholder="Ponga su primer nombre" required>
+            </div>
+            <div>
+                <label for="apellidos">Apellidos</label>
+                <input type="text" id="apellidos" name="apellidos" placeholder="Ingresa tu apellido" required>
+            </div>
+        </div>
+        
+        <label for="correo_califica">Correo electrónico</label>
+        <input type="email" id="correo_califica" name="correo_califica" placeholder="Introduce tu correo electrónico" required>
+        
+        <label for="telefono">Teléfono</label>
+        <input type="number" id="telefono" name="telefono" placeholder="Ingresa tu teléfono" required>
+        
+        <label for="revisar">Revisar</label>
+        <textarea id="revisar" name="revisar" placeholder="Escribe tu reseña aquí..." required></textarea>
+        
+        <label for="recomendarias">¿Nos recomendarías a tus amigos?</label>
+        <div class="form-row">
+            <label for="si">Sí</label>
+            <input type="checkbox" id="si" name="recomendarias">
+            
+            <label for="no">No</label>
+            <input type="checkbox" id="no" name="recomendarias">
+        </div>
+        
+        <label for="comentarios">Comentarios</label>
+        <textarea id="comentarios" name="comentarios" placeholder="¿Algo más que te gustaría añadir?" required></textarea><br><br>
+        
+        <button type="submit">Enviar</button>
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/contactanos.html">
+        <input type="hidden" name="_captcha" value="false">
+    </form>
+
+    <footer>
+        <p>&copy; 2024 Mike's Painting And Remodeling.</p>
+        <a href="mailto:contacto@mipaginaweb.com" class="icon-link">
+            <img src="images/iconos/gmail.png" alt="Correo Electrónico" class="icon">
+        </a>
+
+        <a href="" class="icon-link">
+            <img src="images/iconos/facebook.png" alt="facebook" class="icon">
+        </a>
+    </footer>
+
+    <script src="js/scroll.js"></script>
+
+</body>
+</html>

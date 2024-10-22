@@ -1,0 +1,95 @@
+/* Form Styles - Ajuste General */
+
+form, .additional-form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.24); /* Fondo oscuro semitransparente */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque */
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más ligera */
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    z-index: 1;
+}
+
+form h2, .additional-form h2 {
+    font-size: 24px;
+    color: white; /* Letras blancas */
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+form label, .additional-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: white; /* Letras blancas */
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea,
+.additional-form input[type="text"],
+.additional-form input[type="email"],
+.additional-form input[type="number"],
+.additional-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Bordes claros */
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo claro con transparencia */
+    color: white; /* Letras blancas */
+}
+
+form textarea,
+.additional-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+/* Botones */
+form button, .additional-form button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #023877;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 300ms ease;
+}
+
+form button:hover, .additional-form button:hover {
+    background-color: #0074c7;
+}
+
+/* Flexbox para campos en fila */
+form .form-row, .additional-form .form-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+form .form-row > div, .additional-form .form-row > div {
+    width: 48%;
+}
+
+/* Checkbox */
+.additional-form .form-row input[type="checkbox"] {
+    margin-left: 10px;
+}
+
+.additional-form .form-row label {
+    margin-right: 10px;
+    color: white; /* Letras blancas */
+}
+
+#revisar, #comentarios {
+    height: 100px;
+}
