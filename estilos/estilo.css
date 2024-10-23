@@ -13,3 +13,41 @@ section h2 {
     margin-bottom: 10px;
     color: white;
 }
+
+
+/* Responsividad */
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .seccion-contenido {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .texto, .imagen {
+        width: 100%;
+    }
+
+    .texto {
+        margin-bottom: 20px;
+    }
+
+    .imagen img {
+        width: 100%;
+        max-width: 400px;
+    }
+}
