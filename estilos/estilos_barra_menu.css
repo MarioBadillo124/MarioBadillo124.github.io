@@ -227,13 +227,15 @@ nav ul li ul a:hover {
 
 @media screen and (max-width: 720px){
     
+    .search {
+        font-size: 0.8rem;
+    }
     .superior{
         padding: 10px;
     }
     .logo img{
         width: 100px;
     }
-
     nav > ul{
         flex-direction: column;
         background-color: #023877;
@@ -279,9 +281,6 @@ nav ul li ul a:hover {
         opacity: 1;
     }
 }
-
-
-
 
 /* Pie de página */
 footer {
