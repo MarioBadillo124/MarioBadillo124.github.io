@@ -193,9 +193,15 @@ function init() {
     // Función para manejar el clic en el botón "Explore"
     exploreBtn.onclick = function() {
         const sectionLinks = {
-            "Baños": "baño.html",
-            "Habitacion": "habitacion.html",
-            "Puertas y ventanas": "puertas_y_ventanas.html"
+            "Bathrooms": "categorias/baño.html",
+            "Room": "categorias/habitacion.html",
+            "Doors and windows": "categorias/puertas_y_ventanas.html",
+            "Closet":"categorias/armario.html",
+            "Ktchen":"categorias/cosina.html",
+            "Hallway":"categorias/pasillo.html",
+            "Exterior":"categorias/exterior.html",
+            "Others":"categorias/mano_obra.html"
+
         };
 
         const activeItem = items[current];
