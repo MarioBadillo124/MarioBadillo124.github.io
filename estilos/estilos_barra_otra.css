@@ -1,13 +1,14 @@
 header {
     font-family: 'Roboto', sans-serif;
-    position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     background: white;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     z-index: 1000;
+    position: relative; /* Cambié fixed por relative */
 }
+
 
 /* Header y menú en posición normal */
 header.visible {

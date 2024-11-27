@@ -1,0 +1,135 @@
+
+.slider {
+    position: relative;
+    width: 100%;
+    /* El slider ocupará el 100% del ancho disponible */
+    max-width: 450px;
+    /* Ahora el tamaño máximo es de 450px, más pequeño que antes */
+    margin: 50px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.slider-track {
+    display: flex;
+    transition: transform 0.6s ease-out;
+}
+
+.slide {
+    min-width: 100%;
+    transition: opacity 0.5s ease;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Asegura que las imágenes se ajusten y recorten adecuadamente */
+    border-radius: 10px;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    /* Botones más pequeños */
+    font-size: 16px;
+    /* Texto más pequeño */
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.slider-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    /* Separación de los indicadores más pequeña */
+}
+
+.indicator {
+    width: 10px;
+    /* Indicadores más pequeños */
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.indicator.active {
+    background-color: #fff;
+}
+
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .slider {
+        max-width: 90%;
+        /* En pantallas medianas, el slider ocupará el 90% del ancho */
+    }
+
+    .slider-indicators {
+        bottom: 5px;
+        /* Reducimos el espacio inferior */
+    }
+
+    .indicator {
+        width: 8px;
+        /* Indicadores más pequeños en pantallas pequeñas */
+        height: 8px;
+    }
+
+    button {
+        padding: 6px 12px;
+        /* Botones más pequeños */
+        font-size: 14px;
+        /* Texto más pequeño */
+    }
+}
+
+@media (max-width: 480px) {
+    .slider {
+        max-width: 100%;
+        /* En pantallas muy pequeñas, el slider ocupará todo el ancho */
+        margin: 20px auto;
+    }
+
+    .slider-indicators {
+        bottom: 3px;
+        /* Reducimos aún más el espacio inferior */
+    }
+
+    .indicator {
+        width: 6px;
+        /* Indicadores más pequeños */
+        height: 6px;
+    }
+
+    button {
+        padding: 5px 10px;
+        /* Botones más pequeños */
+        font-size: 12px;
+        /* Texto aún más pequeño */
+    }
+}
