@@ -41,11 +41,9 @@ h1 {
 }
 
 h2 {
-    font-size: 24px;
-    color: #023877;
-    margin-bottom: 20px;
-    font-weight: 700;
-    text-align: center;
+    margin: 0; /* Elimina el margen por defecto */
+    color: white;
+    font-family: 'Roboto', sans-serif; /* O usa 'Open Sans' */
 }
 
 a {

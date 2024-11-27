@@ -126,7 +126,7 @@ form .form-row > div, .additional-form .form-row > div {
         width: 100%;
     }
 
-    .form-row input[type="checkbox"] {
+    .form-row input[type="radio"] {
         margin-left: 0;
     }
 }

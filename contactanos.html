@@ -59,56 +59,56 @@
             <textarea id="mensaje" name="mensaje" placeholder="Write your message here..." required></textarea>
 
             <button type="submit">Send</button>
-            <input type="hidden" name="_next" value="http://mikespaintingandremodelingllc.com/contactanos.html">
+            <input type="hidden" name="_next" value="https://mikespaintingandremodelingllc.com/contactanos.html">
             <input type="hidden" name="_captcha" value="false">
+            <p id="form-feedback"></p>
         </form>
 
+        <form class="additional-form" id="calificar" action="https://formsubmit.co/badillomario48@gmail.com" method="POST">
+            <h2>Rate us</h2><br>
+            <div class="form-row">
+                <div>
+                    <label for="nombre_pila">First Name</label>
+                    <input type="text" id="nombre_pila" name="nombre_pila" placeholder="Enter your first name" required>
+                </div>
+                <div>
+                    <label for="apellidos">Last Name</label>
+                    <input type="text" id="apellidos" name="apellidos" placeholder="Enter your last name" required>
+                </div>
+            </div>
+    
+            <label for="correo_califica">Email</label>
+            <input type="email" id="correo_califica" name="correo_califica" placeholder="Enter your email" required>
+    
+            <label for="telefono">Phone</label>
+            <input type="number" id="telefono" name="telefono" placeholder="Enter your phone number" required>
+    
+            <label for="revisar">Review</label>
+            <textarea id="revisar" name="revisar" placeholder="Write your review here..." required></textarea>
+    
+            <label>Would you recommend us to your friends?</label>
+            <div class="form-row">
+                <label for="si">Yes</label>
+                <input type="radio" id="si" name="recomendarias" value="yes" required>
+            
+                <label for="no">No</label>
+                <input type="radio" id="no" name="recomendarias" value="no" required>
+            </div>        
+    
+            <label for="comentarios">Comments</label>
+            <textarea id="comentarios" name="comentarios" placeholder="Anything else you'd like to add?"
+                required></textarea><br><br>
+    
+            <button type="submit">Send</button>
+            <input type="hidden" name="_next" value="https://mikespaintingandremodelingllc.com/contactanos.html">
+            <input type="hidden" name="_captcha" value="false">
+            <p id="form-feedback"></p>
+        </form>
     </div>
-
-
-    <form class="additional-form" id="calificar" action="https://formsubmit.co/badillomario48@gmail.com" method="POST">
-        <h2>Rate us</h2><br>
-        <div class="form-row">
-            <div>
-                <label for="nombre_pila">First Name</label>
-                <input type="text" id="nombre_pila" name="nombre_pila" placeholder="Enter your first name" required>
-            </div>
-            <div>
-                <label for="apellidos">Last Name</label>
-                <input type="text" id="apellidos" name="apellidos" placeholder="Enter your last name" required>
-            </div>
-        </div>
-
-        <label for="correo_califica">Email</label>
-        <input type="email" id="correo_califica" name="correo_califica" placeholder="Enter your email" required>
-
-        <label for="telefono">Phone</label>
-        <input type="number" id="telefono" name="telefono" placeholder="Enter your phone number" required>
-
-        <label for="revisar">Review</label>
-        <textarea id="revisar" name="revisar" placeholder="Write your review here..." required></textarea>
-
-        <label for="recomendarias">Would you recommend us to your friends?</label>
-        <div class="form-row">
-            <label for="si">Yes</label>
-            <input type="checkbox" id="si" name="recomendarias">
-
-            <label for="no">No</label>
-            <input type="checkbox" id="no" name="recomendarias">
-        </div>
-
-        <label for="comentarios">Comments</label>
-        <textarea id="comentarios" name="comentarios" placeholder="Anything else you'd like to add?"
-            required></textarea><br><br>
-
-        <button type="submit">Send</button>
-        <input type="hidden" name="_next" value="http://mikespaintingandremodelingllc.com/contactanos.html">
-        <input type="hidden" name="_captcha" value="false">
-    </form>
 
     <footer>
         <p>&copy; 2024 Mike's Painting And Remodeling.</p>
-        <a href="mailto:contacto@mipaginaweb.com" class="icon-link">
+        <a href="mailto:mikogonz@yahoo.com" class="icon-link">
             <img src="images/iconos/gmail.png" alt="Email" class="icon">
         </a>
 
@@ -118,6 +118,7 @@
     </footer>
 
     <script src="js/scroll.js"></script>
+    <script src="js/validacion.js"></script>
 
 </body>
 
