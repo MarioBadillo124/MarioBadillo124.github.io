@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/estilos_barra_menu.css">
+    <link rel="stylesheet" href="estilos/estilos_formulario.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+    <script src="https://kit.fontawesome.com/a16ce2084e.js" crossorigin="anonymous"></script>
+    <title>Contact us</title>
+</head>
+
+<body>
+    <header>
+        <div class="superior">
+            <div class="logo">
+                <img src="images/iconos/logo.jpg" alt="logo">
+            </div>
+            <div class="search">
+                <br>
+                <h1>Mike’s Painting And Remodeling LLC</h1><br>
+            </div>
+        </div>
+
+        <div class="container__menu">
+
+            <div class="menu">
+                <input type="checkbox" id="check__menu">
+                <label  for="check__menu" id="label__check">
+                    <i class="fa-solid fa-bars icon__menu"></i>
+                </label>
+                <nav>
+                    <ul>
+                        <li><a href="index.html"></a>
+                        </li>
+                        <li><a href="mi_trabajo/mi_trabajo.html">My work</a></li>
+                        <li><a href="" id="selected">Contact us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header><br>
+
+    <div class="com">
+        <form id="contacto" action="https://formsubmit.co/mikogonz@yahoo.com" method="POST">
+            <h2>Get in touch</h2><br>
+            <label for="nombre">Name</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Enter your name" required>
+
+            <label for="correo">Email</label>
+            <input type="email" id="correo" name="correo" placeholder="Enter your email" required>
+
+            <label for="sujeto">Subject</label>
+            <input type="text" id="sujeto" name="sujeto" placeholder="Enter the subject" required>
+
+            <label for="mensaje">Message</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Write your message here..." required></textarea>
+
+            <button type="submit">Send</button>
+            <input type="hidden" name="_next" value="https://mikespaintingandremodelingllc.com/contactanos.html">
+            <input type="hidden" name="_captcha" value="false">
+            <p id="form-feedback"></p>
+        </form>
+
+        <form class="additional-form" id="calificar" action="https://formsubmit.co/mikogonz@yahoo.com" method="POST">
+            <h2>Rate us</h2><br>
+            <div class="form-row">
+                <div>
+                    <label for="nombre_pila">First Name</label>
+                    <input type="text" id="nombre_pila" name="nombre_pila" placeholder="Enter your first name" required>
+                </div>
+                <div>
+                    <label for="apellidos">Last Name</label>
+                    <input type="text" id="apellidos" name="apellidos" placeholder="Enter your last name" required>
+                </div>
+            </div>
+    
+            <label for="correo_califica">Email</label>
+            <input type="email" id="correo_califica" name="correo_califica" placeholder="Enter your email" required>
+    
+            <label for="telefono">Phone</label>
+            <input type="number" id="telefono" name="telefono" placeholder="Enter your phone number" required>
+    
+            <label for="revisar">Review</label>
+            <textarea id="revisar" name="revisar" placeholder="Write your review here..." required></textarea>
+    
+            <label>Would you recommend us to your friends?</label>
+            <div class="form-row">
+                <label for="si">Yes</label>
+                <input type="radio" id="si" name="recomendarias" value="yes" required>
+            
+                <label for="no">No</label>
+                <input type="radio" id="no" name="recomendarias" value="no" required>
+            </div>        
+    
+            <label for="comentarios">Comments</label>
+            <textarea id="comentarios" name="comentarios" placeholder="Anything else you'd like to add?"
+                required></textarea><br><br>
+    
+            <button type="submit">Send</button>
+            <input type="hidden" name="_next" value="https://mikespaintingandremodelingllc.com/contactanos.html">
+            <input type="hidden" name="_captcha" value="false">
+            <p id="form-feedback"></p>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Mike's Painting And Remodeling.</p>
+        <a href="mailto:mikogonz@yahoo.com" class="icon-link">
+            <img src="images/iconos/gmail.png" alt="Email" class="icon">
+        </a>
+
+        <a href="" class="icon-link">
+            <img src="images/iconos/facebook.png" alt="Facebook" class="icon">
+        </a>
+    </footer>
+
+    <script src="js/scroll.js"></script>
+    <script src="js/validacion.js"></script>
+
+</body>
+
+</html>
